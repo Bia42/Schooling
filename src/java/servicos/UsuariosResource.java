@@ -49,7 +49,7 @@ public class UsuariosResource {
     @Produces("application/json")
     public  String  getUsuario(
     @PathParam("nome")  String  nome, @PathParam("senha") String senha) throws Exception
-    {
+    {//bia
       Usuario user = BD.USUARIOS.getAluno(nome, senha);
          Gson  gson  =  new  Gson();
       if(user != null){
